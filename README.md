@@ -15,3 +15,6 @@ python client/chat.py
 ```
 
 Note that you can disable Mycroft's audio response by stopping the it's audio service.
+
+### Author's Note:
+Feedback is welcome. I had no experience with python3, websockets, or pyqt before starting this, so feel free to share pointers.
