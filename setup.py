@@ -1,12 +1,12 @@
 from distutils.core import setup
 
 setup(
-    name='mycroft-runner',
-    version='0.0.1',
-    packages=['lib', 'client'],
+    name='mycroft-chatter',
+    version='0.0.2',
+    packages=['lib', 'client', 'client.ui', 'client.ui.generated'],
     url='',
-    license='',
+    license='GPL3',
     author='Chris Rogers',
     author_email='ChristopherRogers1991@gmail.com',
-    description='A simple tool for interacting with Mycroft'
+    description='Provides a chat like interface for Mycroft'
 )
