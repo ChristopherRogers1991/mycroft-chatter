@@ -40,6 +40,11 @@ class ChatApplication(QtWidgets.QApplication):
         message = "{sender}: {message}".format(sender=sender, message=message)
         self.messages.append(message)
         self.window.chatHistory.setPlainText("\n".join(self.messages))
+        self.scroll_to_bottom()
+
+    def scroll_to_bottom(self):
+        scroll_bar = self.window.chatHistory.verticalScrollBar()
+        scroll_bar.setValue(scroll_bar.maximum())
 
     def on_message(self, ws, message):
         data = json.loads(message)
