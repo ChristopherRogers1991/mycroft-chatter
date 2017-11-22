@@ -94,4 +94,5 @@ if __name__ == "__main__":
     app = ChatApplication(sys.argv)
     app.start_websocket()
     app.connect_signal()
-    sys.exit(app.exec_())
+    app.exec_()
+    app.ws.close()
