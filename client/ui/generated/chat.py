@@ -16,6 +16,7 @@ https://www.riverbankcomputing.com/software/pyqt/download5/
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+
 class Ui_ChatMainWindow(QtWidgets.QMainWindow):
     def setupUi(self, ChatMainWindow):
         ChatMainWindow.setObjectName("ChatMainWindow")
@@ -96,6 +97,4 @@ class Ui_ChatMainWindow(QtWidgets.QMainWindow):
         self.actionQuit.setText(_translate("ChatMainWindow", "Quit"))
         self.actionQuit.setShortcut(_translate("ChatMainWindow", "Ctrl+Q"))
         self.actionAboutQt.setText(_translate("ChatMainWindow", "About Qt..."))
-        self.actionChangeNickname.setText(_translate("ChatMainWindow", "Change nickname..."))
-        self.actionChangeNickname.setShortcut(_translate("ChatMainWindow", "Ctrl+N"))
 
