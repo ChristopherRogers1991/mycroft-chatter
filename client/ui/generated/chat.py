@@ -37,7 +37,14 @@ class Ui_ChatMainWindow(QtWidgets.QMainWindow):
         self.vboxlayout.setSpacing(6)
         self.vboxlayout.setObjectName("vboxlayout")
 
-        self.chatHistory = QtWidgets.QTextBrowser(self.centralwidget)
+        # self.chatHistory = QtWidgets.QTextBrowser(self.centralwidget)
+        # self.chatHistory.setAcceptDrops(False)
+        # self.chatHistory.setAcceptRichText(True)
+        # self.chatHistory.setObjectName("chatHistory")
+
+        self.chatHistory = QtWebEngineWidgets.QWebEngineView(self.centralwidget)
+        self.chatHistory.
+        self.chatHistory.setHtml("<html><body><h1>Test</h1></body></html>")
         self.chatHistory.setAcceptDrops(False)
         self.chatHistory.setAcceptRichText(True)
         self.chatHistory.setObjectName("chatHistory")

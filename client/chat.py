@@ -92,7 +92,7 @@ class ChatApplication(QtWidgets.QApplication):
 
 if __name__ == "__main__":
     app = ChatApplication(sys.argv)
-    app.start_websocket()
-    app.connect_signal()
+    # app.start_websocket()
+    # app.connect_signal()
     app.exec_()
     app.ws.close()
